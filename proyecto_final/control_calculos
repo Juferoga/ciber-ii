@@ -1,0 +1,98 @@
+
+
+        C_pid=Kp+Ki* Integral error+ Kd*Derivada error
+        
+        error=r(t)-y(t)
+  
+  	
+  	Kp+ Ki/S * E(s) + Kd *S* E(s)
+  	
+  	     
+        Kp+Ki/S+KdS
+     
+         s= a+jb   
+        (KpS+Ki+KdS^2)/S
+        
+       
+       C(S)=Kd(S^2+Kp/kd*S+Ki/S)/S
+       
+       C(S) = K(S^2+BS+WS)/S
+       
+        Kp/Kd = 
+         Ki/Kd 
+         
+         C(s) = K(S+a)(S+b)/S
+         
+         a,b =  -Kp/Kd+- sqrt(Kp/Kd^2-4Ki/Kd)
+               /2 
+               
+          ######Diseño#############
+          
+          
+          H(S) = N(S)/D(S) |pd
+          
+          pd = -1.0313+1.2186
+       
+       
+       H(s=Pd) = N(-1.0313+1.2186j)/D(-1.0313+1.2186j)
+       
+       Raices deñ denominador
+       
+       -443.3857
+   48.9293
+    4.1979
+          (s+p1)(s+p2)
+          s=-p1
+      
+          
+       Zo=-1.0313+1.2186j+443.3857
+       z1= -1.0313+1.2186j-48.9293
+       z3= -1.0313+1.2186j-4.1979    
+      ##################
+      p0 =-1.0313+1.2186j+0.3600 
+      p1= -1.0313+1.2186j+2.7600
+      p2=-1.0313+1.2186j+3.3800+1.4865e+02i
+      p3=-1.0313+1.2186j+3.3800-1.4865e+02i
+      
+      phi_zo=atand(img(Zo)/real(Zo))
+      phi_z1=atand(img(z1)/real(z1))
+      phi_z2=atand(img(z2)/real(z2))
+      
+      %%%%%%%
+      phi_po=atand(img(p0)/real(p0))
+      phi_p1=atand(img(p1)/real(p1))
+      phi_p2=atand(img(p2)/real(p2))
+      phi_p3=atand(img(p3)/real(p3))
+
+===========
+    angulo_zo+angulo_z1+angulo_z2-angulo_p0-angulo_p1-angulo_p2-angulo_p3
+   
+
+      C = (s+a)(s+b)/s
+     
+     11 = (Alfa1+alf2)-90°
+           
+      101 -60
+      
+      
+      60 = tang(1.2186)/(1.0313+a)
+
+     tan(60)=1.2186/(-1.0313+a)
+     1.0313+a=(1.2186)/(tan(60))
+     w1=(1.2186/tan(60))+1.0313
+     
+      41 = atand(1.2186)/(1.0313+b)	      
+          
+       w2=(1.2186/tan(41))+1.0313   
+          
+          
+         
+         1 = K*abs(pd+1.7349)*abs(pd+2.4331)*0.2696*abs(zo)*abs(z1+)*abs(z2)/(abs(p)*abs(p0)*abs(p1)*abs(p2)*abs(p3))
+         Kd=(abs(pd)*abs(p0)*abs(p1)*abs(p2)*abs(p3))/(abs(pd+1.7349)*abs(pd+2.4331)*0.2696*abs(zo)*abs(z1)*abs(z2))
+         
+         
+         
+          
+          
+          
+          
